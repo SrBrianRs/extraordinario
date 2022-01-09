@@ -17,12 +17,6 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'extraordinario'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('extraordinario');
-  });
-
   it('Deberá tener escrito "Pruebas de software" en el h1', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const h1 = fixture.debugElement.query(By.css('h1')).nativeElement;
