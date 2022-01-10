@@ -46,7 +46,7 @@ describe('NumeroComplejo formula', () => {
       expect(control4.valid).toBeFalsy();
   });
 
-  it('Deberá retornar i positiva si el resultado es correcto', () => {
+  it('Deberá retornar i positiva si el resultado es correcto en suma', () => {
     let control_1 : any; let control_2 : any; let control_3 : any; let control_4 : any;
     let resultado : any;
 
@@ -63,7 +63,7 @@ describe('NumeroComplejo formula', () => {
     expect(resultado).toEqual('7 + 1 i');
   });
 
-  it('Deberá retornar "7 + i" si el resutlado es correcto', () => {
+  it('Deberá retornar i negativa si el resultado es correcto en suma', () => {
     let control_1 : any; let control_2 : any; let control_3 : any; let control_4 : any;
     let resultado : any;
 
@@ -80,7 +80,7 @@ describe('NumeroComplejo formula', () => {
     expect(resultado).toEqual('7 -6 i');
   });
 
-  it('Deberá retornar "-3-7i" si el resultado es correcto', () => {
+  it('Deberá retornar i negativa si el resultado es correcto en resta', () => {
     let control_1 : any; let control_2 : any; let control_3 : any; let control_4 : any;
     let resultado : any;
 
@@ -97,7 +97,7 @@ describe('NumeroComplejo formula', () => {
     expect(resultado).toEqual('-3 -7 i');
   });
 
-  it('Deberá retornar "-3-7i" si el resultado es correcto', () => {
+  it('Deberá retornar i positiva si el resultado es correcto en resta', () => {
     let control_1 : any; let control_2 : any; let control_3 : any; let control_4 : any;
     let resultado : any;
 
@@ -114,7 +114,7 @@ describe('NumeroComplejo formula', () => {
     expect(resultado).toEqual('1 + 6 i');
   });
 
-  it('Deberá retornar "2+6i" si el resutlado es correcto', () => {
+  it('Deberá retornar i positiva si el resultado es correcto en multiplicacion', () => {
     let control_1 : any; let control_2 : any; let control_3 : any; let control_4 : any;
     let resultado : any;
 
@@ -131,7 +131,7 @@ describe('NumeroComplejo formula', () => {
     expect(resultado).toEqual('2 + 6 i');
   });
 
-  it('Deberá retornar "2+6i" si el resutlado es correcto', () => {
+  it('Deberá retornar i negativa si el resultado es correcto en multiplicacion', () => {
     let control_1 : any; let control_2 : any; let control_3 : any; let control_4 : any;
     let resultado : any;
 
@@ -148,7 +148,7 @@ describe('NumeroComplejo formula', () => {
     expect(resultado).toEqual('2 -6 i');
   });
 
-  it('Deberá retornar "7/5 - 11/5i" si el resutlado es correcto', () => {
+  it('Deberá retornar i negativa si el resultado es correcto en division', () => {
     let control_1 : any; let control_2 : any; let control_3 : any; let control_4 : any;
     let resultado : any;
 
@@ -165,7 +165,7 @@ describe('NumeroComplejo formula', () => {
     expect(resultado).toEqual('1.4 -2.2 i');
   });
 
-  it('Deberá retornar "5.8 + 0.4 i" si el resutlado es correcto', () => {
+  it('Deberá retornar i positiva si el resultado es correcto en division', () => {
     let control_1 : any; let control_2 : any; let control_3 : any; let control_4 : any;
     let resultado : any;
 
@@ -210,7 +210,7 @@ describe('NumeroComplejo formula', () => {
     expect(resultado).toEqual('division');
   });
 
-  it('Deberá retornar "no se pudo realizar', () => {
+  it('Deberá retornar "no se pudo realizar"', () => {
     let resultado : any;
     resultado = component.onSubmit('');
 
